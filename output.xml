@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.6 on darwin)" generated="20230907 09:54:47.648" rpa="false" schemaversion="4">
+<suite id="s1" name="LoginRegistrationSystem" source="/Users/pkoirala/Desktop/prt582/LoginRegistrationSystem.robot">
+<kw name="Go to Login Page" library="LRS_Resources" type="SETUP">
+<doc>This test case verify user is able to open the URL</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230907 09:54:48.046" level="INFO">Opening browser 'chrome' to base url 'http://localhost/loginsystem/login.php'.</msg>
+<msg timestamp="20230907 09:54:58.628" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230907 09:54:58.629" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=116.0.5845.140)
+Stacktrace:
+0   chromedriver                        0x0000000104cc665c chromedriver + 4318812
+1   chromedriver                        0x0000000104cbed00 chromedriver + 4287744
+2   chromedriver                        0x00000001048f07ec chromedriver + 296940
+3   chromedriver                        0x00000001048e967c chromedriver + 267900
+4   chromedriver                        0x00000001048d89a4 chromedriver + 199076
+5   chromedriver                        0x00000001048d9ef8 chromedriver + 204536
+6   chromedriver                        0x00000001048d8cd0 chromedriver + 199888
+7   chromedriver                        0x00000001048d7b48 chromedriver + 195400
+8   chromedriver                        0x00000001048d7af4 chromedriver + 195316
+9   chromedriver                        0x00000001048d5fa4 chromedriver + 188324
+10  chromedriver                        0x00000001048d6afc chromedriver + 191228
+11  chromedriver                        0x00000001048f27d4 chromedriver + 305108
+12  chromedriver                        0x0000000104967380 chromedriver + 783232
+13  chromedriver                        0x0000000104966d28 chromedriver + 781608
+14  chromedriver                        0x0000000104922178 chromedriver + 500088
+15  chromedriver                        0x0000000104922fc0 chromedriver + 503744
+16  chromedriver                        0x0000000104c86c40 chromedriver + 4058176
+17  chromedriver                        0x0000000104c8b160 chromedriver + 4075872
+18  chromedriver                        0x0000000104c4ee68 chromedriver + 3829352
+19  chromedriver                        0x0000000104c8bc4c chromedriver + 4078668
+20  chromedriver                        0x0000000104c63f08 chromedriver + 3915528
+21  chromedriver                        0x0000000104ca8140 chromedriver + 4194624
+22  chromedriver                        0x0000000104ca82c4 chromedriver + 4195012
+23  chromedriver                        0x0000000104cb84d0 chromedriver + 4261072
+24  libsystem_pthread.dylib             0x00000001853d206c _pthread_start + 148
+25  libsystem_pthread.dylib             0x00000001853cce2c thread_start + 8
+</msg>
+<status status="FAIL" starttime="20230907 09:54:48.044" endtime="20230907 09:55:02.631"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login Registration System</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20230907 09:55:02.632" endtime="20230907 09:55:02.633"/>
+</kw>
+<status status="FAIL" starttime="20230907 09:54:48.042" endtime="20230907 09:55:02.634"/>
+</kw>
+<test id="s1-t1" name="Login into the System" line="17">
+<status status="FAIL" starttime="20230907 09:55:02.635" endtime="20230907 09:55:02.638">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=116.0.5845.140)
+Stacktrace:
+0   chromedriver                        0x0000000104cc665c chromedriver + 4318812
+1   chromedriver                        0x0000000104cbed00 chromedriver + 4287744
+2   chromedriver                        0x00000001048f07ec chromedriver + 296940
+3   chromedriver                        0x00000001048e967c chromedriver + 267900
+4   chromedriver                        0x00000001048d89a4 chromedriver + 199076
+5   chromedriver                        0x00000001048d9ef8 chromedriver + 204536
+6   chromedriver                        0x00000001048d8cd0 chromedriver + 199888
+7   chromedriver                        0x00000001048d7b48 chromedriver + 195400
+8   chromedriver                        0x00000001048d7af4 chromedriver + 1...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x0000000104922fc0 chromedriver + 503744
+16  chromedriver                        0x0000000104c86c40 chromedriver + 4058176
+17  chromedriver                        0x0000000104c8b160 chromedriver + 4075872
+18  chromedriver                        0x0000000104c4ee68 chromedriver + 3829352
+19  chromedriver                        0x0000000104c8bc4c chromedriver + 4078668
+20  chromedriver                        0x0000000104c63f08 chromedriver + 3915528
+21  chromedriver                        0x0000000104ca8140 chromedriver + 4194624
+22  chromedriver                        0x0000000104ca82c4 chromedriver + 4195012
+23  chromedriver                        0x0000000104cb84d0 chromedriver + 4261072
+24  libsystem_pthread.dylib             0x00000001853d206c _pthread_start + 148
+25  libsystem_pthread.dylib             0x00000001853cce2c thread_start + 8</status>
+</test>
+<test id="s1-t2" name="View and Update details" line="22">
+<status status="FAIL" starttime="20230907 09:55:02.640" endtime="20230907 09:55:02.643">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=116.0.5845.140)
+Stacktrace:
+0   chromedriver                        0x0000000104cc665c chromedriver + 4318812
+1   chromedriver                        0x0000000104cbed00 chromedriver + 4287744
+2   chromedriver                        0x00000001048f07ec chromedriver + 296940
+3   chromedriver                        0x00000001048e967c chromedriver + 267900
+4   chromedriver                        0x00000001048d89a4 chromedriver + 199076
+5   chromedriver                        0x00000001048d9ef8 chromedriver + 204536
+6   chromedriver                        0x00000001048d8cd0 chromedriver + 199888
+7   chromedriver                        0x00000001048d7b48 chromedriver + 195400
+8   chromedriver                        0x00000001048d7af4 chromedriver + 1...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x0000000104922fc0 chromedriver + 503744
+16  chromedriver                        0x0000000104c86c40 chromedriver + 4058176
+17  chromedriver                        0x0000000104c8b160 chromedriver + 4075872
+18  chromedriver                        0x0000000104c4ee68 chromedriver + 3829352
+19  chromedriver                        0x0000000104c8bc4c chromedriver + 4078668
+20  chromedriver                        0x0000000104c63f08 chromedriver + 3915528
+21  chromedriver                        0x0000000104ca8140 chromedriver + 4194624
+22  chromedriver                        0x0000000104ca82c4 chromedriver + 4195012
+23  chromedriver                        0x0000000104cb84d0 chromedriver + 4261072
+24  libsystem_pthread.dylib             0x00000001853d206c _pthread_start + 148
+25  libsystem_pthread.dylib             0x00000001853cce2c thread_start + 8</status>
+</test>
+<test id="s1-t3" name="Logout" line="25">
+<status status="FAIL" starttime="20230907 09:55:02.645" endtime="20230907 09:55:02.646">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=116.0.5845.140)
+Stacktrace:
+0   chromedriver                        0x0000000104cc665c chromedriver + 4318812
+1   chromedriver                        0x0000000104cbed00 chromedriver + 4287744
+2   chromedriver                        0x00000001048f07ec chromedriver + 296940
+3   chromedriver                        0x00000001048e967c chromedriver + 267900
+4   chromedriver                        0x00000001048d89a4 chromedriver + 199076
+5   chromedriver                        0x00000001048d9ef8 chromedriver + 204536
+6   chromedriver                        0x00000001048d8cd0 chromedriver + 199888
+7   chromedriver                        0x00000001048d7b48 chromedriver + 195400
+8   chromedriver                        0x00000001048d7af4 chromedriver + 1...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x0000000104922fc0 chromedriver + 503744
+16  chromedriver                        0x0000000104c86c40 chromedriver + 4058176
+17  chromedriver                        0x0000000104c8b160 chromedriver + 4075872
+18  chromedriver                        0x0000000104c4ee68 chromedriver + 3829352
+19  chromedriver                        0x0000000104c8bc4c chromedriver + 4078668
+20  chromedriver                        0x0000000104c63f08 chromedriver + 3915528
+21  chromedriver                        0x0000000104ca8140 chromedriver + 4194624
+22  chromedriver                        0x0000000104ca82c4 chromedriver + 4195012
+23  chromedriver                        0x0000000104cb84d0 chromedriver + 4261072
+24  libsystem_pthread.dylib             0x00000001853d206c _pthread_start + 148
+25  libsystem_pthread.dylib             0x00000001853cce2c thread_start + 8</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230907 09:55:02.649" endtime="20230907 09:55:02.718"/>
+</kw>
+<doc>Login Functionality</doc>
+<status status="FAIL" starttime="20230907 09:54:47.655" endtime="20230907 09:55:02.718">Suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=116.0.5845.140)
+Stacktrace:
+0   chromedriver                        0x0000000104cc665c chromedriver + 4318812
+1   chromedriver                        0x0000000104cbed00 chromedriver + 4287744
+2   chromedriver                        0x00000001048f07ec chromedriver + 296940
+3   chromedriver                        0x00000001048e967c chromedriver + 267900
+4   chromedriver                        0x00000001048d89a4 chromedriver + 199076
+5   chromedriver                        0x00000001048d9ef8 chromedriver + 204536
+6   chromedriver                        0x00000001048d8cd0 chromedriver + 199888
+7   chromedriver                        0x00000001048d7b48 chromedriver + 195400
+8   chromedriver                        0x00000001048d7af4 chromedriver + 1...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x0000000104922fc0 chromedriver + 503744
+16  chromedriver                        0x0000000104c86c40 chromedriver + 4058176
+17  chromedriver                        0x0000000104c8b160 chromedriver + 4075872
+18  chromedriver                        0x0000000104c4ee68 chromedriver + 3829352
+19  chromedriver                        0x0000000104c8bc4c chromedriver + 4078668
+20  chromedriver                        0x0000000104c63f08 chromedriver + 3915528
+21  chromedriver                        0x0000000104ca8140 chromedriver + 4194624
+22  chromedriver                        0x0000000104ca82c4 chromedriver + 4195012
+23  chromedriver                        0x0000000104cb84d0 chromedriver + 4261072
+24  libsystem_pthread.dylib             0x00000001853d206c _pthread_start + 148
+25  libsystem_pthread.dylib             0x00000001853cce2c thread_start + 8</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="LoginRegistrationSystem">LoginRegistrationSystem</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
